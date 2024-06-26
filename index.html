@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./contactform.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <h1>Contact Us</h1>
+    <form action="">
+        <div class="name-wrapper">
+            <div class="name">
+                <label for="">First Name *</label>
+                <input type="text">
+                <p class="error"></p>
+            </div>
+            <div class="name">
+                <label for="">Last Name *</label>
+                <input type="text">
+                <p class="error"></p>
+            </div>
+        </div>
+        <div class="email">
+            <label for="">Email Address *</label>
+            <input type="email">
+            <p class="error"></p>
+        </div>
+        <label for="">Query Type *</label>
+        <div class="query-wrapper">
+            <div class="query">
+                <input type="radio" name="query" value="1">
+                <p>General Enquiry</p>
+                <!-- <button><input type="radio">General Enquiry</button> -->
+            </div>
+            <div class="query">
+                <input type="radio" name="query" value="2">
+                <p>Support Request</p>
+                <!-- <button><input type="radio">Support Request</button> -->
+            </div>
+        </div>
+        <p class="error"></p> 
+        <div  class="message">
+            <label  for="">Message *</label><br>
+            <textarea name="" id=""></textarea>
+        </div>
+        <p class="error"></p>
+        <div class="check-input">
+            <input class="check"  type="checkbox">
+            <p>I consent to being contacted by the team *</p>
+        </div>
+        <p class="error"></p>
+        <input class="submit-button" type="submit" value="Submit">
+    </form>
+  </section>
+  <section class="section-2">
+      <div class="section-2-header">
+          <img src="./contact-form-main/contact-form-main/assets/images/icon-success-check.svg" alt="">
+          <h2>Message Sent!</h2>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon</p>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Omoloja Ishaq</a>.
+  </div>
+</body>
+</html>

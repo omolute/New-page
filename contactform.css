@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+:root{
+    --green_lighter: hsl(148, 38%, 91%);
+    --green_medium: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --grey_medium: hsl(0, 0%, 100%);
+    --grey_darker: hsl(187, 24%, 22%);
+}
+body{
+    background-color: var(--green_lighter);
+    color: var(--grey_darker);
+    font-size: 16px;
+    position: relative;
+}
+.section{
+    width: 60%;
+    background-color: var(--white);
+    margin: 10% auto;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+}
+.email{
+    margin-bottom: 1.5rem;
+}
+h1{
+    color: var(--green_medium);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.name-wrapper{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.name{
+    width: 50%;
+}
+.query-wrapper{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    /* margin-bottom: 1.5rem; */
+}
+.query{
+    width: 50%;
+    border: solid 1px var(--grey_darker);
+    display: flex;
+    height: 4rem;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+.query:hover{
+    border: 2px solid var(--green_medium);
+    cursor: pointer;
+}
+.query:active{
+    border: 2px solid var(--green_medium);
+    cursor: pointer;
+    background-color: var(--green_lighter);
+}
+.query.active{
+    border: 2px solid var(--green_medium);
+    cursor: pointer;
+    background-color: var(--green_lighter);
+}
+input{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--grey_darker);
+    outline: none;
+    margin: 0.3rem 0;
+    border-radius: 0.3rem;
+}
+input.invalid{
+    border: 1px solid var(--red);
+}
+input:hover{
+    border:2px solid var(--green_medium);
+    cursor: pointer;
+}
+input:focus{
+    border:2px solid var(--green_medium);
+    cursor: pointer;
+}
+button{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    border-radius: 0.3rem;
+    border: 1px var(--grey_darker) solid;
+    width: 100%;
+    background-color: var(--white);
+    color: var(--grey_darker);
+    display: flex;
+    align-items: center;
+}
+.check-input{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 1rem;
+}
+.check-input > .check{
+    margin-right: 1rem;
+    width: 5%;
+    accent-color: var(--green_medium);
+    border-color: var(--grey_darker);
+}
+.submit-button{
+    background-color: var(--green_medium);
+    color: var(--white);
+    font-size: large;
+    margin-top: 1.5rem;
+    border: none;
+}
+.submit-button:hover{
+    background-color: var(--grey_darker);
+    border: none;
+    cursor: pointer;
+}
+textarea{
+    width: 100%;
+    border: 1px solid var(--grey_darker);
+    border-radius: 0.3rem;
+    height: 7rem;
+    margin-top: 0.5rem;
+    /* margin-bottom: 1rem; */
+    padding: 1rem;
+    outline: none;
+}
+textarea:hover{
+    border:1px solid var(--green_medium)
+}
+textarea.invalid{
+    border: 1px solid var(--red);
+}
+.query input{
+    width: 5%;
+    height: 2rem;
+    accent-color: var(--green_medium);
+}
+.message{
+    margin-top: 1rem;
+}
+.error{
+    margin: 0.5rem;
+    color: var(--red);
+}
+.section-2{
+    width: 30%;
+    background-color: var(--grey_darker);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: -5.5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+.section-2-header{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.section-2 p{
+    font-size: 0.9rem;
+    color: var(--green_lighter);
+}
+@media(max-width:480px){
+    .name-wrapper{
+        display: block;
+    }
+    .name{
+        width: 100%;
+    }
+    .section{
+        width: 95%;
+        margin-top: 30%;
+    }
+    .query-wrapper{
+        display: block;
+    }
+    .query{
+        width: 100%;
+    }
+    .check-input{
+        width: 100%;
+    }
+    .check{
+        width: 5%;
+    }
+    .section-2{
+        width: 90%;
+    }
+}
